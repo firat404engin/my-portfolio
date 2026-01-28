@@ -1,14 +1,14 @@
 "use client";
 
 import React, { ReactNode } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 import { usePathname } from "next/navigation";
 
 interface PageTransitionProps {
   children: ReactNode;
 }
 
-const pageVariants = {
+const pageVariants: Variants = {
   initial: {
     opacity: 0,
     y: 20,
@@ -18,7 +18,7 @@ const pageVariants = {
     y: 0,
     transition: {
       duration: 0.5,
-      ease: [0.25, 0.1, 0.25, 1],
+      ease: "easeOut",
       when: "beforeChildren",
       staggerChildren: 0.1,
     },
@@ -28,7 +28,7 @@ const pageVariants = {
     y: -20,
     transition: {
       duration: 0.3,
-      ease: [0.25, 0.1, 0.25, 1],
+      ease: "easeIn",
     },
   },
 };
