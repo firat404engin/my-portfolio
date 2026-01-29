@@ -45,10 +45,10 @@ export default function BackToTop() {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-24 lg:bottom-6 right-4 lg:right-6 z-40 w-11 h-11 lg:w-12 lg:h-12 rounded-xl bg-[var(--color-bg-card)] border border-[var(--color-border)] flex items-center justify-center text-[var(--color-text-muted)] hover:text-[var(--color-accent)] hover:border-[var(--color-accent)] transition-all duration-300 shadow-lg ${
+      className={`fixed bottom-6 right-6 z-40 w-12 h-12 rounded-xl bg-[var(--color-bg-card)] border border-[var(--color-border)] items-center justify-center text-[var(--color-text-muted)] hover:text-[var(--color-accent)] hover:border-[var(--color-accent)] transition-all duration-300 shadow-lg hidden lg:flex ${
         isVisible
-          ? "opacity-100 translate-y-0"
-          : "opacity-0 translate-y-4 pointer-events-none"
+          ? "lg:opacity-100 lg:translate-y-0"
+          : "lg:opacity-0 lg:translate-y-4 lg:pointer-events-none"
       }`}
       aria-label="Back to top"
     >
