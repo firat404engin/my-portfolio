@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" fill="none">
+<defs><linearGradient id="bg" x2="720" y2="220" gradientUnits="userSpaceOnUse"><stop stop-color="#13233a"/><stop offset="1" stop-color="#102b2a"/></linearGradient></defs>
+<rect width="720" height="220" rx="24" fill="url(#bg)"/>
+<path d="M200 110h70m180 0h70" stroke="#64748b" stroke-width="2" stroke-dasharray="6 6"/><path d="m258 104 8 6-8 6m250-12 8 6-8 6" stroke="#94a3b8" stroke-width="2"/>
+<g stroke="#60a5fa" stroke-width="3"><rect x="92" y="40" width="36" height="26" rx="5"/><path d="M110 66v15M80 81h60M80 81v10m60-10v10"/><rect x="67" y="91" width="26" height="22" rx="4"/><rect x="127" y="91" width="26" height="22" rx="4"/></g>
+<g stroke="#34d399" stroke-width="3" stroke-linejoin="round"><path d="M317 112V72l30 12V63l25 12V42h22l6 70h-83Z"/><path d="M333 96h8m17 0h8m16 0h8"/></g>
+<g stroke="#fbbf24" stroke-width="3"><ellipse cx="600" cy="52" rx="34" ry="12"/><path d="M566 52v48c0 16 68 16 68 0V52M566 76c0 16 68 16 68 0"/></g>
+<g text-anchor="middle" font-family="system-ui, sans-serif"><g fill="#f1f5f9" font-size="22" font-weight="600"><text x="110" y="155">ERP</text><text x="360" y="155">MES</text><text x="600" y="155">SQL</text></g><g fill="#cbd5e1" font-size="15"><text x="110" y="184">Mikro Fly</text><text x="360" y="184">Prosis</text><text x="600" y="184">SQL Server</text></g></g></svg>
