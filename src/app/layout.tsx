@@ -18,18 +18,20 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://firatengin.dev"),
   title: {
-    default: "Fırat Engin | .NET Developer & Computer Engineer",
+    default: "Fırat Engin | Systems Engineer & .NET Developer",
     template: "%s | Fırat Engin",
   },
   description:
-    "Portfolio of Fırat Engin - A passionate Computer Engineer & .NET Developer building robust backend systems and modern web solutions.",
+    "Portfolio of Fırat Engin - Systems Engineer at System Handle, improving production processes with Mikro Fly ERP, Prosis MES and SQL Server.",
   keywords: [
     ".NET Developer",
     "Computer Engineer",
     "C#",
     "Backend Developer",
     "Full Stack",
-    "Azure",
+    "Mikro Fly ERP",
+    "Prosis MES",
+    "Production Systems",
     "SQL Server",
     "ASP.NET",
     "Software Engineer",
@@ -49,23 +51,23 @@ export const metadata: Metadata = {
     alternateLocale: "en_US",
     url: "https://firatengin.dev",
     siteName: "Fırat Engin Portfolio",
-    title: "Fırat Engin | .NET Developer & Computer Engineer",
+    title: "Fırat Engin | Systems Engineer & .NET Developer",
     description:
-      "A passionate Computer Engineer & .NET Developer building robust backend systems and modern web solutions.",
+      "Systems Engineer at System Handle, improving production processes with Mikro Fly ERP, Prosis MES and SQL Server.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Fırat Engin - .NET Developer & Computer Engineer",
+        alt: "Fırat Engin - Systems Engineer & .NET Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fırat Engin | .NET Developer & Computer Engineer",
+    title: "Fırat Engin | Systems Engineer & .NET Developer",
     description:
-      "A passionate Computer Engineer & .NET Developer building robust backend systems and modern web solutions.",
+      "Systems Engineer at System Handle, improving production processes with Mikro Fly ERP, Prosis MES and SQL Server.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -97,10 +99,10 @@ const jsonLd = {
     "https://www.instagram.com/firatengin404/",
     "https://medium.com/@fengin7373",
   ],
-  jobTitle: ".NET Developer & Computer Engineer",
+  jobTitle: "Systems Engineer & .NET Developer",
   worksFor: {
     "@type": "Organization",
-    name: "SERANİT",
+    name: "System Handle",
   },
   alumniOf: {
     "@type": "EducationalOrganization",
@@ -112,6 +114,10 @@ const jsonLd = {
     "ASP.NET MVC",
     "SQL Server",
     "Entity Framework",
+    "Mikro Fly ERP",
+    "Prosis MES",
+    "Production Monitoring",
+    "System Integration",
     "Web Development",
     "Backend Development",
   ],
