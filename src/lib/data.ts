@@ -38,6 +38,11 @@ export const socialLinks: SocialLink[] = [
 ];
 
 export const techStack: TechStackItem[] = [
+  // Production & Business Systems
+  { name: "Mikro Fly ERP", icon: "erp", category: "tools" },
+  { name: "Prosis MES", icon: "mes", category: "tools" },
+  { name: "SQL Reporting", icon: "reporting", category: "tools" },
+
   // Backend & Programming
   { name: "C#", icon: "csharp", category: "backend" },
   { name: "ASP.NET MVC5", icon: "aspnet", category: "backend" },
@@ -84,9 +89,7 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const aboutMe = {
-  intro: `I'm a recent Computer Engineering graduate with a passion for building robust, scalable backend systems. My journey into software development began during my university years, where I discovered the elegance of .NET and fell in love with creating clean, efficient solutions.`,
-  
-  journey: `Throughout my academic career and internships, I've honed my skills in C#, ASP.NET Core, and SQL Server. I believe in writing code that not only works but is also maintainable and well-documented. My goal is to contribute to projects that make a real impact while continuously growing as a developer.`,
-  
-  current: `Currently, I'm focused on deepening my expertise in cloud technologies, particularly Azure, and exploring microservices architecture. I'm excited about the intersection of backend development and modern DevOps practices, and I'm always eager to learn new technologies that can help me build better software.`,
+  intro: "I am a Computer Engineering graduate working as a Systems Engineer at System Handle since July 2026, focusing on digitizing, managing and improving production processes.",
+  journey: "I analyze work orders, production operations, inventory movements and data flows with Mikro Fly ERP, Prosis MES and SQL Server. I create SQL queries and reports, resolve operational issues and support system integration and users.",
+  current: "I am developing my own MES application to make production monitoring more modern, user-friendly and efficient.",
 };
