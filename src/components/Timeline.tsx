@@ -7,6 +7,8 @@ import { useLanguage } from "@/context/LanguageContext";
 interface TimelineItem {
   id: string;
   year: string;
+  yearTr?: string;
+  yearEn?: string;
   titleTr: string;
   titleEn: string;
   roleTr?: string;
@@ -21,29 +23,27 @@ interface TimelineItem {
 const timelineData: TimelineItem[] = [
   {
     id: "1",
-    year: "02.2025 – 07.2025",
-    titleTr: "Seranit",
-    titleEn: "Seranit",
-    roleTr: "Yazılım Stajyeri",
-    roleEn: "Software Intern",
+    year: "07.2026",
+    yearTr: "Temmuz 2026 – Halen",
+    yearEn: "July 2026 – Present",
+    titleTr: "System Furniture Accessories & Door Handle",
+    titleEn: "System Furniture Accessories & Door Handle",
+    roleTr: "Sistem Mühendisi",
+    roleEn: "Systems Engineer",
     type: "work",
-    location: "İstanbul, Türkiye",
-    descriptionTr: "IFS ve Bimser CSP sistemlerinde veri yönetimi ve süreç optimizasyonu. C#/.NET ile masaüstü ve web uygulamaları, ASP.NET MVC5 ile e-ticaret sistemleri geliştirdim. Oracle SQL, Entity Framework ve Selenium kullandım.",
-    descriptionEn: "Data management and process optimization in IFS and Bimser CSP systems. Developed desktop and web applications with C#/.NET, e-commerce systems with ASP.NET MVC5. Used Oracle SQL, Entity Framework and Selenium.",
-    skills: ["C#", ".NET", "ASP.NET MVC5", "Oracle SQL", "Bimser CSP", "Entity Framework"],
-  },
-  {
-    id: "2",
-    year: "05.2024 – 08.2024",
-    titleTr: "Seranit",
-    titleEn: "Seranit",
-    roleTr: "BT Stajyeri",
-    roleEn: "IT Intern",
-    type: "work",
-    location: "İstanbul, Türkiye",
-    descriptionTr: "Active Directory ile kullanıcı yönetimi, donanım/ağ sorun giderme ve IT destek. Sistem güncellemeleri, güvenlik yamaları ve çevre birimleri kurulumunda görev aldım.",
-    descriptionEn: "User management with Active Directory, hardware/network troubleshooting and IT support. Handled system updates, security patches and peripheral installations.",
-    skills: ["Active Directory", "IT Support", "Networking", "Hardware"],
+    descriptionTr: [
+      "Üretim süreçlerinin dijitalleştirilmesi, yönetilmesi ve iyileştirilmesi üzerine çalışıyorum.",
+      "Mikro Fly ERP ve Prosis MES üzerinden iş emirlerini, üretim operasyonlarını, stok hareketlerini ve veri akışlarını analiz ederek sorunlara çözüm üretiyorum.",
+      "SQL Server sorguları ve raporlamalarla üretim takibini kolaylaştırıyor; sistemler arası entegrasyon ve kullanıcı desteği sağlıyorum.",
+      "Üretim takibini daha modern, kullanıcı dostu ve verimli hâle getirmek için kendi MES uygulamamı geliştiriyorum.",
+    ],
+    descriptionEn: [
+      "I work on digitizing, managing and improving production processes.",
+      "I analyze work orders, production operations, inventory movements and data flows using Mikro Fly ERP and Prosis MES to resolve operational issues.",
+      "I simplify production monitoring with SQL Server queries and reports, and provide system integration and user support.",
+      "I am developing my own MES application to make production monitoring more modern, user-friendly and efficient.",
+    ],
+    skills: ["Mikro Fly ERP", "Prosis MES", "SQL Server", "SQL", "ERP / MES"],
   },
   {
     id: "3",
@@ -51,8 +51,8 @@ const timelineData: TimelineItem[] = [
     titleTr: "Namık Kemal Üniversitesi",
     titleEn: "Namık Kemal University",
     type: "education",
-    descriptionTr: "Bilgisayar Mühendisliği Lisans • GANO: 3.25",
-    descriptionEn: "Computer Engineering BSc • GPA: 3.25",
+    descriptionTr: "Bilgisayar Mühendisliği Lisans • GANO: 3.24 / 4",
+    descriptionEn: "Computer Engineering BSc • GPA: 3.24 / 4",
   },
   {
     id: "4",
@@ -127,7 +127,7 @@ export default function Timeline() {
                     <div className="glass rounded-xl p-5">
                       <div className="flex items-start justify-between gap-3 mb-2">
                         <span className="text-xs font-semibold text-[var(--color-accent)] bg-[var(--color-accent)]/10 px-2 py-1 rounded-md">
-                          {item.year}
+                          {language === "tr" ? (item.yearTr ?? item.year) : (item.yearEn ?? item.year)}
                         </span>
                         {item.location && (
                           <span className="text-xs text-[var(--color-text-muted)] flex items-center gap-1">
@@ -224,7 +224,7 @@ export default function Timeline() {
                     
                     <div className="glass rounded-xl p-5">
                       <span className="text-xs font-semibold text-[var(--color-text-secondary)] bg-[var(--color-text-muted)]/10 px-2 py-1 rounded-md">
-                        {item.year}
+                        {language === "tr" ? (item.yearTr ?? item.year) : (item.yearEn ?? item.year)}
                       </span>
                       
                       <h4 className="text-base font-semibold text-[var(--color-text-primary)] mt-3 mb-2">

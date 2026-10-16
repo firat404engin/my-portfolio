@@ -26,7 +26,7 @@ const testimonials: TestimonialItem[] = [
     author: "Bayram ELPE",
     roleTr: "Yazılım Uzmanı",
     roleEn: "Software Specialist",
-    company: "SERANİT",
+    company: "MAS-DAF Makina Sanayi",
     image: "https://i.hizliresim.com/hz19zoj.jpg",
     email: "bayramelpe1@gmail.com",
     linkedin: "https://www.linkedin.com/in/bayram-elpe-16aa91190/",
@@ -39,7 +39,7 @@ const testimonials: TestimonialItem[] = [
     roleTr: "IT Uzmanı",
     roleEn: "IT Specialist",
     company: "SERANİT",
-    image: "https://media.licdn.com/dms/image/v2/D4D03AQGS7r6bQjJKAA/profile-displayphoto-crop_800_800/B4DZpPgaK9KQAM-/0/1762270489188?e=1771459200&v=beta&t=R3tivY3y_0Dtj_SGkvv3nOdFPjaEzRCg4ELHCLy_kmY",
+    image: "https://media.licdn.com/dms/image/v2/D4D03AQGS7r6bQjJKAA/profile-displayphoto-scale_400_400/B4DZpPgaK9KQAk-/0/1762270489282?e=1793836800&v=beta&t=F77kAY8kDqJhFbpL2Nv48iiHJT4khkzdFAO-RnvMxp0",
     email: "emin.aydin@seranit.com.tr",
     linkedin: "https://www.linkedin.com/in/emin-aydin-643b27183/",
   },
@@ -131,9 +131,9 @@ export default function Testimonials() {
               exit={{ opacity: 0, x: -50 }}
               transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
             >
-              {/* Quote Icon - Background */}
-              <div className="absolute top-6 right-6 md:top-8 md:right-8">
-                <QuoteIcon className="text-[var(--color-accent)] opacity-20" size={60} />
+              {/* Quote icon occupies its own row to avoid overlapping the text. */}
+              <div className="flex justify-end mb-4" aria-hidden="true">
+                <QuoteIcon className="text-[var(--color-accent)] opacity-30" size={36} />
               </div>
 
               {/* Quote */}

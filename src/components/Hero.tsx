@@ -75,8 +75,8 @@ export default function Hero() {
   const { t, language } = useLanguage();
   
   const roles = language === "tr" 
-    ? ["Bilgisayar Mühendisi", ".NET Geliştirici", "Backend Developer", "Full Stack Developer"]
-    : ["Computer Engineer", ".NET Developer", "Backend Developer", "Full Stack Developer"];
+    ? ["Sistem Mühendisi", "Bilgisayar Mühendisi", ".NET Geliştirici"]
+    : ["Systems Engineer", "Computer Engineer", ".NET Developer"];
 
   const handleScrollToProjects = () => {
     const element = document.querySelector("#projects");
@@ -192,7 +192,7 @@ export default function Hero() {
               </motion.button>
 
               <motion.a
-                href="https://drive.google.com/file/d/1JPevuRYhq7WXu-NX6nBd_GUuVrmBW9MX/view?usp=sharing"
+                href="/FiratEnginOzgecmis.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-2 px-8 py-4 border border-[var(--color-border)] text-[var(--color-text-primary)] font-semibold rounded-xl hover:border-[var(--color-text-muted)] hover:bg-[var(--color-bg-tertiary)] transition-all duration-300"

@@ -10,6 +10,7 @@ export default function About() {
   const { t } = useLanguage();
 
   const categories = [
+    { key: "tools", label: t.about.production },
     { key: "backend", label: t.about.backend },
     { key: "database", label: t.about.database },
     { key: "frontend", label: t.about.frontend },
@@ -111,6 +112,11 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
+            <figure className="glass rounded-2xl p-6 sm:p-8">
+              <figcaption className="text-sm font-medium text-[var(--color-text-secondary)] mb-4">{t.about.workflow}</figcaption>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/production-workflow.svg" alt={t.about.workflowAlt} width={720} height={220} loading="lazy" className="w-full h-auto" />
+            </figure>
             <div className="glass rounded-2xl p-8 card-hover">
               <h3 className="text-xl font-semibold text-[var(--color-text-primary)] mb-6 flex items-center gap-3">
                 <span className="w-10 h-10 rounded-lg bg-[var(--color-bg-tertiary)] border border-[var(--color-border)] flex items-center justify-center">

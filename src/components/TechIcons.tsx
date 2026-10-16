@@ -178,9 +178,29 @@ export const HardwareIcon: React.FC<TechIconProps> = ({ className, size = 40 }) 
   </svg>
 );
 
+// Concept icons for business systems; these are not vendor logos.
+export const ERPIcon: React.FC<TechIconProps> = ({ className, size = 40 }) => (
+  <svg aria-hidden="true" className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#60A5FA" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="8" y="2" width="8" height="6" rx="1.5" /><path d="M12 8v5M5 13h14M5 13v3m14-3v3" /><rect x="2" y="16" width="6" height="6" rx="1.5" /><rect x="16" y="16" width="6" height="6" rx="1.5" />
+  </svg>
+);
+export const MESIcon: React.FC<TechIconProps> = ({ className, size = 40 }) => (
+  <svg aria-hidden="true" className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#34D399" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M3 21V10l6 3V7l6 3V3h5l1 18H3Z" /><path d="M7 17h1m4 0h1m4 0h1" />
+  </svg>
+);
+export const ReportingIcon: React.FC<TechIconProps> = ({ className, size = 40 }) => (
+  <svg aria-hidden="true" className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#FBBF24" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M3 3v18h18M7 17v-4m5 4V9m5 8V5" />
+  </svg>
+);
+
 // Tech icon mapper
 export const getTechIcon = (iconName: string, size: number = 40) => {
   const icons: Record<string, React.ReactNode> = {
+    erp: <ERPIcon size={size} />,
+    mes: <MESIcon size={size} />,
+    reporting: <ReportingIcon size={size} />,
     csharp: <CSharpIcon size={size} />,
     dotnet: <DotNetIcon size={size} />,
     aspnet: <DotNetIcon size={size} />,
