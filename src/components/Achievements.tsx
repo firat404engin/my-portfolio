@@ -86,8 +86,8 @@ const achievements: Achievement[] = [
     ),
     titleTr: "Bilgisayar Mühendisliği",
     titleEn: "Computer Engineering",
-    valueTr: "GPA 3.25",
-    valueEn: "GPA 3.25",
+    valueTr: "GPA 3.24 / 4",
+    valueEn: "GPA 3.24 / 4",
     color: "#f59e0b",
   },
 ];
